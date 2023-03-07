@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+/* ============== Variables Globales ============== */
+:root {
+  /* Fuentes y tamaños */
+  --font-family: "Josefin Sans", sans-serif;
+  --font-size-title: 5.5rem;
+  --font-size-paragraph: 2.75rem;
+  --font-size-shortTitle: 1.56rem;
+  --font-size-link: 1.25rem;
+
+  /* Colores */
+  --color-primary: #5758e0;
+  --color-secondary: rgba(0, 0, 0, 0.65);
+  --color-backgroundDark: #191919;
+  --color-text: #eee;
+  --color-text-white: #fff;
+  --color-gradiant: linear-gradient(
+    90deg,
+    rgba(87, 88, 224, 1) 0%,
+    rgba(81, 163, 237, 1) 100%
+  );
+}
+
+/* ============== Constantes ============== */
