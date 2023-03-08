@@ -9,10 +9,15 @@
   --font-size-shortTitle: 1.56rem;
   --font-size-link: 1.25rem;
 
+  --font-weightTitle: 700;
+  --font-weightParagraph: 500;
+  --font-weightLink: 300;
+
   /* Colores */
   --color-primary: #5758e0;
   --color-secondary: rgba(0, 0, 0, 0.65);
   --color-backgroundDark: #191919;
+  --color-backgroundlight: #1111;
   --color-text: #eee;
   --color-text-white: #fff;
   --color-gradiant: linear-gradient(
@@ -23,3 +28,81 @@
 }
 
 /* ============== Constantes ============== */
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--color-backgroundDark);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.btn {
+  border: none;
+  padding: 10px 30px;
+  font-weight: var(--font-weightLink);
+}
+
+/* ============== Header ============== */
+.headerNavbar {
+  background-color: var(--color-secondary);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-link);
+  font-weight: var(--font-weightTitle);
+}
+
+.title {
+  color: transparent;
+  background: var(--color-gradiant);
+  -webkit-background-clip: text;
+}
+
+.navbar__nav {
+  gap: 20px;
+  display: flex;
+  height: 100%;
+}
+
+.nav__links {
+  display: inline-block;
+  padding: 30px 0;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: var(--color-text-white);
+  padding: 20px 0;
+}
+
+.nav__link:active {
+  background-color: #5758e0;
+}
+
+.navbar__btn {
+  border-radius: 10px;
+  color: var(--color-text-white);
+  background: var(--color-gradiant);
+}
